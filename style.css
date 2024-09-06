@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url('bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    /* Keeps the background fixed while scrolling */
+}
+
+
+
+.wrapper {
+    width: 400px;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-box {
+    position: relative;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    background: #e0e0e0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #666;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.input-box input:focus+label,
+.input-box input:not(:placeholder-shown)+label {
+    top: 0;
+    transform: translateY(-100%);
+    color: #2575fc;
+}
+
+.btn {
+    width: 100%;
+    background: #2575fc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6a11cb;
+}
+
+.switch {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
